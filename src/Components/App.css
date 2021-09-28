@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+body {
+  font-family: "Shippori Mincho", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
