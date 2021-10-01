@@ -1,28 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useState } from "react";
 
 const Navi = styled.nav`
   position: fixed;
   width: 100%;
+  background-color: #263343;
   color: #f0f4f5;
   margin-left: -10px;
-  }
+  z-index: 10;
 `;
 
 const List = styled.ul`
   height: 100%;
   min-height: 5vh;
   margin: 0;
-  background-color: #263343;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 20px 30px;
   list-style: none;
   @media only screen and (max-width: 768px) {
+    transform: translateY(-200px);
     flex-direction: column;
+    animation: ${(props) => (props.display ? props.appear : props.disappear)} 1s
+      linear forwards;
+  }
 `;
 
 const Menu = styled.li`
@@ -37,8 +41,31 @@ const Menu = styled.li`
     font-size: 20px;
   }
   @media only screen and (max-width: 768px) {
+    font-size: 25px;
     display: ${(props) => (props.display ? "block" : "none")};
   }
+`;
+
+const displayAppear = keyframes`
+from {
+  opacity: 0;
+  transform: translateY(-200px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+`;
+
+const displayDisAppear = keyframes`
+from {
+  opacity: 1;
+  transform: translateY(0);
+}
+to {
+  opacity: 0;
+  transform: translateY(-200px);
+}
 `;
 
 const Line = styled.div`
@@ -61,7 +88,7 @@ function Nav() {
   const [display, setDisplay] = useState(false);
 
   const hamburg = (e) => {
-    e.preventDefault(e);
+    e.preventDefault();
     const dis = display;
     if (dis === false) {
       setDisplay(true);
@@ -74,17 +101,37 @@ function Nav() {
 
   return (
     <Navi>
-      <List>
-        <Menu display={display}>
-          <a href="/">TOP</a>
+      <List
+        display={display}
+        appear={displayAppear}
+        disappear={displayDisAppear}
+      >
+        <Menu
+          display={display}
+          appear={displayAppear}
+          disappear={displayDisAppear}
+        >
+          <a href="#top">TOP</a>
         </Menu>
-        <Menu display={display}>
-          <a href="/">ABOUT</a> US
+        <Menu
+          display={display}
+          appear={displayAppear}
+          disappear={displayDisAppear}
+        >
+          <a href="#about">ABOUT</a> US
         </Menu>
-        <Menu display={display}>
+        <Menu
+          display={display}
+          appear={displayAppear}
+          disappear={displayDisAppear}
+        >
           <a href="/">CONTACT</a>
         </Menu>
-        <Menu display={display}>
+        <Menu
+          display={display}
+          appear={displayAppear}
+          disappear={displayDisAppear}
+        >
           <a href="/">RECRUITMENT</a>
         </Menu>
       </List>

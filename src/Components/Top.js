@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Img = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   margin: -10px;
   background: url("img/top.jpg");
   background-position: left 15% bottom 90%;
@@ -30,7 +30,7 @@ const Dis = styled.span`
 
 function Top() {
   return (
-    <Img alt="top">
+    <Img id="top" alt="top">
       <Title>B-plus</Title>
       <Dis>System interior & Storage Furniture</Dis>
     </Img>
