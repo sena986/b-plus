@@ -118,7 +118,7 @@ function Nav() {
           appear={displayAppear}
           disappear={displayDisAppear}
         >
-          <a href="#about">ABOUT</a> US
+          <a href="#about">ABOUT US</a>
         </Menu>
         <Menu
           display={display}
@@ -132,7 +132,7 @@ function Nav() {
           appear={displayAppear}
           disappear={displayDisAppear}
         >
-          <a href="/">RECRUITMENT</a>
+          <a href="#recruit">RECRUITMENT</a>
         </Menu>
       </List>
       <a href="/" onClick={hamburg}>
