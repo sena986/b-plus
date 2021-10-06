@@ -69,7 +69,7 @@ to {
 `;
 
 const Line = styled.div`
-  border: 1px #fbfcfc solid;
+  border: 1px darkgray solid;
   align: left;
   width: 100%;
 `;

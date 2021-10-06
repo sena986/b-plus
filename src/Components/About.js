@@ -10,10 +10,13 @@ const Main = styled.div`
 `;
 
 const Title = styled.div`
+  margin: 120px 0px 80px 0px;
   font-size: 30px;
-  padding: 100px 0;
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 768px) {
+    margin: 50px 0px 50px 0px;
+  }
 `;
 
 const TitleOne = styled.span`
@@ -34,6 +37,7 @@ const Dis = styled.div`
     width: 100%;
     display: block;
     text-align: center;
+    font-size: 20px;
   }
 `;
 
@@ -48,7 +52,7 @@ const Ptwo = styled.p`
 `;
 
 const Img = styled.div`
-  width: 40vw;
+  width: 30vw;
   height: 40vh;
   background: url("img/about.jpg");
   background-position: center;

@@ -3,6 +3,7 @@ import Top from "./Top";
 import "./App.css";
 import About from "./About";
 import Recruit from "./Recruit";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Top />
       <About />
       <Recruit />
+      <Footer />
     </div>
   );
 }
