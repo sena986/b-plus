@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Img = styled.div`
   width: 100vw;
   height: 90vh;
-  margin: -10px;
   background: url("img/top.jpeg");
   background-position: left 15% bottom 90%;
   background-size: cover;
@@ -27,7 +26,7 @@ const Dis = styled.span`
   font-size: 25px;
   position: absolute;
   left: 10vw;
-  top: 40vh;
+  top: 45vh;
   color: #d49466;
   @media only screen and (max-width: 768px) {
     color: #ff793f;

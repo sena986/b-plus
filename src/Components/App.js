@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./About";
 import Recruit from "./Recruit";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <Top />
       <About />
+      <Contact />
       <Recruit />
       <Footer />
     </div>

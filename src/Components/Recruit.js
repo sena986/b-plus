@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Main = styled.div`
   width: 100vw;
   height: 70vh;
-  margin: -10px;
+  min-height: 500px;
   @media only screen and (max-width: 768px) {
     height: 130vh;
   }
@@ -83,13 +83,13 @@ function Recruit() {
         <TitleOne>RECRUIT</TitleOne>
       </Title>
       <Dis>
-        <Img alt="about" />
+        <Img alt="recruit" />
         <Content>
           <Pone>意欲あふれる</Pone>
           <Ponetwo>仲間を募集しています</Ponetwo>
           <Ptwo>お問合せ先</Ptwo>
           <Ptwo>株式会社　ビー・プラス</Ptwo>
-          <Ptwo>e-mail：ht.nakanishi@bif.co.jp</Ptwo>
+          <Ptwo>e-mail：sanda.bplus@outlook.jp</Ptwo>
           <Ptwo>TEL：072-858-7711</Ptwo>
         </Content>
       </Dis>

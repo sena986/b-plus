@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 const Main = styled.div`
   width: 100vw;
-  height: 70vh;
-  margin: -10px;
+  height: 80vh;
+  min-height: 500px;
+  padding-top: 50px;
   @media only screen and (max-width: 768px) {
     height: 100vh;
   }
 `;
 
 const Title = styled.div`
-  margin: 120px 0px 80px 0px;
+  margin: 50px 0px 80px 0px;
   font-size: 30px;
   width: 100%;
   text-align: center;

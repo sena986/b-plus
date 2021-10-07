@@ -3,8 +3,7 @@ import styled from "styled-components";
 const Foot = styled.div`
   height: 60vh;
   width: 100vw;
-  margin -10px;
-  background-color: darkgray;
+  background-color: #4b4b4b;
   @media only screen and (max-width: 768px) {
     height: 8vh;
   }
@@ -57,7 +56,7 @@ const Copy = styled.footer`
   align-items: center;
   @media only screen and (max-width: 768px) {
     height: 100%;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0;
     justify-content: center;
   }
