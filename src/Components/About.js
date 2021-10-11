@@ -29,7 +29,6 @@ const TitleTwo = styled.span`
 `;
 
 const Dis = styled.div`
-  font-size: 23px;
   color: #d49466;
   display: flex;
   justify-content: space-evenly;
@@ -44,11 +43,13 @@ const Dis = styled.div`
 
 const Pone = styled.p`
   margin-bottom: 50px;
+  font-size: 25px;
   color: #f0f4f5;
 `;
 
 const Ptwo = styled.p`
   margin: 0;
+  font-size: 20px;
   color: #d49466;
 `;
 
@@ -76,7 +77,7 @@ function About() {
         <Dis>
           <Img alt="about" />
           <div style={{ margin: "20px 0px" }}>
-            <Pone>システム収納家具専門</Pone>
+            <Pone>システム収納家具</Pone>
             <Ptwo>壁一面を美しい収納スペースへと</Ptwo>
             <Ptwo>進化することができる優秀な家具</Ptwo>
           </div>

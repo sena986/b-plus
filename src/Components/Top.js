@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Img = styled.div`
   width: 100vw;
   height: 90vh;
-  background: url("img/top.jpeg");
+  background: url("img/top.jpg");
   background-position: left 15% bottom 90%;
   background-size: cover;
   opacity: 0.9;
@@ -14,12 +14,21 @@ const Img = styled.div`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.div`
   font-size: 50px;
   position: absolute;
   left: 10vw;
   top: 25vh;
   color: #f0f4f5;
+`;
+
+const TitleOne = styled.span`
+  color: #f0f4f5;
+  font-size: 60px;
+`;
+const TitleTwo = styled.span`
+  color: #f0f4f5;
+  font-size: 40px;
 `;
 
 const Dis = styled.span`
@@ -37,7 +46,10 @@ const Dis = styled.span`
 function Top() {
   return (
     <Img id="top" alt="top">
-      <Title>B-plus</Title>
+      <Title>
+        <TitleOne>B-</TitleOne>
+        <TitleTwo>plus</TitleTwo>
+      </Title>
       <Dis>System interior & Storage Furniture</Dis>
     </Img>
   );

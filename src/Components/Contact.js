@@ -15,7 +15,6 @@ const Main = styled.div`
 
 const Title = styled.div`
   margin: 50px 0px 50px 0px;
-  font-size: 30px;
   width: 100%;
   text-align: center;
   @media only screen and (max-width: 768px) {
@@ -25,8 +24,10 @@ const Title = styled.div`
 
 const TitleOne = styled.p`
   color: #f0f4f5;
+  font-size: 30px;
 `;
 const TitleTwo = styled.p`
+  font-size: 25px;
   color: #d49466;
 `;
 
@@ -38,19 +39,20 @@ const Content = styled.div`
   align-items: start;
   @media only screen and (max-width: 768px) {
     margin-top: 0px;
+    width: 80%;
   }
 `;
 
 const Pone = styled.p`
   margin: 5px;
-  font-size: 25px;
+  font-size: 20px;
   color: #f0f4f5;
   @media only screen and (max-width: 768px) {
-    font-size: 15px;
+    font-size: 18px;
   }
 `;
 
-const Map = styled.img`
+const Map = styled.div`
   margin-top: 50px;
   object-fit: cover;
   width: 60%;
@@ -75,11 +77,12 @@ function Contact() {
         <Pone>TEL / 072-858-7711</Pone>
         <Pone>FAX / 072-858-7787</Pone>
       </Content>
-      <Map
-        src={
-          "https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
-        }
-      />
+      <Map>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.08519244975!2d135.67688742489065!3d34.804870181106224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011bfc2bc9be2b%3A0x55f7ab7e6ce84b44!2z44CSNTczLTAxMzYg7Jik7IKs7Lm067aAIO2eiOudvOy5tO2DgOyLnCDqsIDsiqTqsIAg64uI7Iuc66eI7LmY!5e0!3m2!1sko!2sjp!4v1633944860878!5m2!1sko!2sjp"
+          style={{ width: "100%", height: "100%" }}
+        />
+      </Map>
     </Main>
   );
 }

@@ -19,7 +19,7 @@ const Box = styled.div`
 `;
 
 const ImgOne = styled.div`
-  background: url("img/bot1.jpeg");
+  background: url("img/bot1.jpg");
   background-position: center;
   background-size: cover;
   width: 25%;
@@ -33,7 +33,7 @@ const ImgTwo = styled.div`
 `;
 
 const ImgThree = styled.div`
-  background: url("img/bot3.jpeg");
+  background: url("img/bot3.jpg");
   background-position: center;
   background-size: cover;
   width: 25%;
