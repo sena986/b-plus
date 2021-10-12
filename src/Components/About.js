@@ -73,7 +73,7 @@ function About() {
         <TitleTwo>US</TitleTwo>
       </Title>
 
-      {window.innerWidth < 768 ? (
+      {window.innerWidth < 900 ? (
         <Dis>
           <Img alt="about" />
           <div style={{ margin: "20px 0px" }}>
