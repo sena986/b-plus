@@ -79,7 +79,7 @@ function Contact() {
       </Content>
       <Map>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.08519244975!2d135.67688742489065!3d34.804870181106224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011bfc2bc9be2b%3A0x55f7ab7e6ce84b44!2z44CSNTczLTAxMzYg7Jik7IKs7Lm067aAIO2eiOudvOy5tO2DgOyLnCDqsIDsiqTqsIAg64uI7Iuc66eI7LmY!5e0!3m2!1sko!2sjp!4v1633944860878!5m2!1sko!2sjp"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.08519244975!2d135.67688742489065!3d34.804870181106224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011bfc2bc9be2b%3A0x55f7ab7e6ce84b44!2z44CSNTczLTAxMzYg7Jik7IKs7Lm067aAIO2eiOudvOy5tO2DgOyLnCDqsIDsiqTqsIAg64uI7Iuc66eI7LmY!5e0!3m2!1sjp!2sjp!4v1633944860878!5m2!1sjp!2sjp"
           style={{ width: "100%", height: "100%" }}
         />
       </Map>
