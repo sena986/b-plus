@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const Main = styled.div`
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   min-height: 500px;
   @media only screen and (max-width: 768px) {
-    height: 130vh;
+    height: 100vh;
   }
 `;
 

@@ -4,19 +4,20 @@ const Main = styled.div`
   width: 100vw;
   height: 80vh;
   min-height: 500px;
-  padding-top: 50px;
+  padding-top: 150px;
   @media only screen and (max-width: 768px) {
-    height: 100vh;
+    height: 90vh;
+    padding-top: 0px;
   }
 `;
 
 const Title = styled.div`
-  margin: 50px 0px 80px 0px;
+  padding: 50px 0px 100px 0px;
   font-size: 30px;
   width: 100%;
   text-align: center;
   @media only screen and (max-width: 768px) {
-    margin: 50px 0px 50px 0px;
+    padding: 50px 0px;
   }
 `;
 
@@ -56,7 +57,7 @@ const Ptwo = styled.p`
 const Img = styled.div`
   width: 30vw;
   height: 40vh;
-  background: url("img/about.jpg");
+  background-image: url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGlkZWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
   background-position: center;
   background-size: cover;
   @media only screen and (max-width: 768px) {
@@ -73,21 +74,21 @@ function About() {
         <TitleTwo>US</TitleTwo>
       </Title>
 
-      {window.innerWidth < 900 ? (
+      {window.innerWidth < 800 ? (
         <Dis>
           <Img alt="about" />
-          <div style={{ margin: "20px 0px" }}>
-            <Pone>システム収納家具</Pone>
-            <Ptwo>壁一面を美しい収納スペースへと</Ptwo>
-            <Ptwo>進化することができる優秀な家具</Ptwo>
+          <div>
+            <Pone>Retail Store for U</Pone>
+            <Ptwo>Imports your daily life.</Ptwo>
+            <Ptwo>Provide with your essentials.</Ptwo>
           </div>
         </Dis>
       ) : (
         <Dis>
-          <div style={{ margin: "20px 0px" }}>
-            <Pone>システム収納家具専門</Pone>
-            <Ptwo>壁一面を美しい収納スペースへと</Ptwo>
-            <Ptwo>進化することができる優秀な家具</Ptwo>
+          <div>
+            <Pone>Retail Store for U</Pone>
+            <Ptwo>Imports your daily life.</Ptwo>
+            <Ptwo>Provide with your essentials.</Ptwo>
           </div>
           <Img alt="about" />
         </Dis>

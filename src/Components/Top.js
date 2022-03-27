@@ -3,14 +3,17 @@ import styled from "styled-components";
 const Img = styled.div`
   width: 100vw;
   height: 90vh;
-  background: url("img/top.jpg");
-  background-position: left 15% bottom 90%;
-  background-size: cover;
-  opacity: 0.9;
+  background: url("https://images.unsplash.com/photo-1621416953228-87ad15716483?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGlkZWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
   position: relative;
   z-index: -10;
   @media only screen and (max-width: 768px) {
-    height: 70vh;
+    background: url("https://images.unsplash.com/photo-1590845947698-8924d7409b56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGlkZWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+    background-position: center;
+    background-size: cover;
+    height: 92vh;
   }
 `;
 
@@ -19,26 +22,21 @@ const Title = styled.div`
   position: absolute;
   left: 10vw;
   top: 25vh;
-  color: #f0f4f5;
+  color: rebeccapurple;
 `;
 
 const TitleOne = styled.span`
-  color: #f0f4f5;
-  font-size: 60px;
-`;
-const TitleTwo = styled.span`
-  color: #f0f4f5;
-  font-size: 40px;
+  font-size: 80px;
 `;
 
 const Dis = styled.span`
-  font-size: 25px;
+  font-size: 30px;
   position: absolute;
   left: 10vw;
   top: 45vh;
-  color: #d49466;
+  color: yellow;
   @media only screen and (max-width: 768px) {
-    color: #ff793f;
+    color: teal;
     font-size: 20px;
   }
 `;
@@ -47,10 +45,9 @@ function Top() {
   return (
     <Img id="top" alt="top">
       <Title>
-        <TitleOne>B-</TitleOne>
-        <TitleTwo>plus</TitleTwo>
+        <TitleOne>BYMYB</TitleOne>
       </Title>
-      <Dis>System interior & Storage Furniture</Dis>
+      <Dis>Buy My Brilliant Ideas</Dis>
     </Img>
   );
 }

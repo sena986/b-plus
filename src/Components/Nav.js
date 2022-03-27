@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navi = styled.nav`
   min-height: 70px;
@@ -12,7 +13,7 @@ const Navi = styled.nav`
   color: #f0f4f5;
   z-index: 10;
   border-bottom: 2px darkgray solid;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 800px) {
     display: none;
   }
 `;
@@ -48,14 +49,12 @@ const MiniNavi = styled.nav`
   background-color: #263343;
   color: #f0f4f5;
   width: 80vw;
-  transform: translateY(-200px);
-  opacity: 0.8;
-  height: 200px;
-  border-bottom-left-radius: 15px;
+  opacity: 0.95;
+  height: 100vh;
   transform: ${({ display }) =>
-    display ? "translateY(0)" : "translateY(-200px)"};
+    display ? "translateX(0)" : "translateX(550px)"};
   transition: transform 0.5s ease-in-out;
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 800px) {
     display: none;
   }
 `;
@@ -125,40 +124,32 @@ function Nav() {
       <Navi>
         <List>
           <Menu>
-            <a href="#top">TOP</a>
+            <Link to="/">MAIN</Link>
           </Menu>
           <Menu>
-            <a href="#about">ABOUT US</a>
+            <Link to="/about">ABOUT US</Link>
           </Menu>
           <Menu>
-            <a href="#contact">CONTACT</a>
-          </Menu>
-          <Menu>
-            <a href="#recruit">RECRUIT</a>
+            <Link to="/contact">CONTACT</Link>
           </Menu>
         </List>
       </Navi>
       <MiniNavi display={display}>
         <MiniList>
           <MiniMenu>
-            <a href="#top" onClick={linked}>
-              TOP
-            </a>
+            <Link to="/" onClick={linked}>
+              MAIN
+            </Link>
           </MiniMenu>
           <MiniMenu>
-            <a href="#about" onClick={linked}>
+            <Link to="/about" onClick={linked}>
               ABOUT US
-            </a>
+            </Link>
           </MiniMenu>
           <MiniMenu>
-            <a href="#contact" onClick={linked}>
+            <Link to="/contact" onClick={linked}>
               CONTACT
-            </a>
-          </MiniMenu>
-          <MiniMenu>
-            <a href="#recruit" onClick={linked}>
-              RECRUIT
-            </a>
+            </Link>
           </MiniMenu>
         </MiniList>
       </MiniNavi>
